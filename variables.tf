@@ -46,3 +46,15 @@ variable "ssm_private_subnet_3" {
   description = "The ID of the third private subnet in the VPC for SSM resources."
   type        = string
 }
+
+# Balancer
+
+variable "load_balancer_internal" {
+  description = "Define whether the Load Balancer should be internal (true) or external (false)."
+  type        = bool
+}
+
+variable "load_balancer_type" {
+  description = "The type of Load Balancer to be created (e.g., 'application' or 'network')."
+  type        = string
+}
