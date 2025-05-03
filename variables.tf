@@ -58,3 +58,25 @@ variable "load_balancer_type" {
   description = "The type of Load Balancer to be created (e.g., 'application' or 'network')."
   type        = string
 }
+
+# ECS General
+
+variable "nodes_ami" {
+  description = "The AMI to be used by the ECS cluster nodes."
+  type        = string
+}
+
+variable "node_instance_type" {
+  description = "The EC2 instance type to be used by the ECS nodes."
+  type        = string
+}
+
+variable "node_volume_size" {
+  description = "The volume size, in GiB, to be used by the ECS nodes."
+  type        = number
+}
+
+variable "node_volume_type" {
+  description = "The EBS volume type to be used by the ECS nodes (e.g., 'gp2', 'io1')."
+  type        = string
+}
