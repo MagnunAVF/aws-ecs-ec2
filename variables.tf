@@ -95,3 +95,18 @@ variable "cluster_on_demand_desired_size" {
   description = "The desired number of on-demand instances in the ECS cluster."
   type        = number
 }
+
+variable "cluster_spot_min_size" {
+  description = "The minimum size of the ECS cluster for spot instances."
+  type        = number
+}
+
+variable "cluster_spot_max_size" {
+  description = "The maximum size of the ECS cluster for spot instances."
+  type        = number
+}
+
+variable "cluster_spot_desired_size" {
+  description = "The desired number of spot instances in the ECS cluster."
+  type        = number
+}
