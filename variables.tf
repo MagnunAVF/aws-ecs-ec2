@@ -80,3 +80,18 @@ variable "node_volume_type" {
   description = "The EBS volume type to be used by the ECS nodes (e.g., 'gp2', 'io1')."
   type        = string
 }
+
+variable "cluster_on_demand_min_size" {
+  description = "The minimum size of the ECS cluster for on-demand instances."
+  type        = number
+}
+
+variable "cluster_on_demand_max_size" {
+  description = "The maximum size of the ECS cluster for on-demand instances."
+  type        = number
+}
+
+variable "cluster_on_demand_desired_size" {
+  description = "The desired number of on-demand instances in the ECS cluster."
+  type        = number
+}
